@@ -8,7 +8,7 @@ object Utils {
         val parts: List<String>? = fullName?.split(" ")
         val firstName = parts?.getOrNull(0)
         val lastName = parts?.getOrNull(1)
-        return firstName to lastName
+        return Pair(firstName, lastName)
     }
 
     fun toInitials(firstName: String?, lastName: String?): String? {
