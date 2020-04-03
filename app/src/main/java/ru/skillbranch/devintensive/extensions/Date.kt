@@ -66,32 +66,39 @@ fun Date.humanizeDiff(date: Date = Date()): String {
     }
 }
 
-enum class TimeUnits{
+enum class TimeUnits {
     SECOND,
     MINUTE,
     HOUR,
-    DAY
-}
+    DAY;
 
-fun TimeUnits.plural(value: Int): String {
-
-    return when(this) {
-        TimeUnits.SECOND -> "$value ${getTimeUnitPeriodName(value, 
-                                            "секунду", 
-                                            "секунды", 
-                                            "секунд")}"
-        TimeUnits.MINUTE -> "$value ${getTimeUnitPeriodName(value, 
-                                            "минуту", 
-                                            "минуты", 
-                                            "минут")}"
-        TimeUnits.HOUR -> "$value ${getTimeUnitPeriodName(value, 
-                                            "час", 
-                                            "часа", 
-                                            "часов")}"
-        TimeUnits.DAY -> "$value ${getTimeUnitPeriodName(value, 
-                                            "день", 
-                                            "дня", 
-                                            "дней")}"
+    fun plural(value: Int): String {
+        return when (this) {
+            SECOND -> "$value ${getTimeUnitPeriodName(
+                value,
+                "секунду",
+                "секунды",
+                "секунд"
+            )}"
+            MINUTE -> "$value ${getTimeUnitPeriodName(
+                value,
+                "минуту",
+                "минуты",
+                "минут"
+            )}"
+            HOUR -> "$value ${getTimeUnitPeriodName(
+                value,
+                "час",
+                "часа",
+                "часов"
+            )}"
+            DAY -> "$value ${getTimeUnitPeriodName(
+                value,
+                "день",
+                "дня",
+                "дней"
+            )}"
+        }
     }
 }
 
