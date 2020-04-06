@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">devintensive</string>
+    <string name="tv_text">Вопрос</string>
+    <string name="iv_benderImage_description">BenderImage</string>
+    <string name="et_hint">Введите текст</string>
+    <string name="btn_send_description">Send</string>
 </resources>
