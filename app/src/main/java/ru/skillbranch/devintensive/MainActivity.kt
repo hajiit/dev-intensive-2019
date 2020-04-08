@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, TextView.OnEdito
         if(v?.id == R.id.et_message) {
             if(actionId == EditorInfo.IME_ACTION_DONE) {
                 sendAnswer()
+                this.hideKeyboard()
                 return true
             }
         }
@@ -80,8 +81,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, TextView.OnEdito
         val (r, g, b) = color
         benderImage.setColorFilter(Color.rgb(r, g, b), PorterDuff.Mode.MULTIPLY)
         textTxt.text = phrase
-
-        this.hideKeyboard()
     }
 
 }
