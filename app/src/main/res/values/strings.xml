@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">devintensive</string>
-    <string name="tv_text">Вопрос</string>
-    <string name="iv_benderImage_description">BenderImage</string>
-    <string name="et_hint">Введите текст</string>
-    <string name="btn_send_description">Send</string>
+    <string name="app_name">Chat Dev-intensive</string>
+    <string name="profile_label_rating">Рейтинг</string>
+    <string name="profile_label_respect">Уважение</string>
+    <string name="profile_hint_repository">Репозиторий</string>
+    <string name="profile_hint_about">О себе</string>
+    <string name="profile_hint_last_name">Фамилия</string>
+    <string name="profile_hint_first_name">Имя</string>
 </resources>
